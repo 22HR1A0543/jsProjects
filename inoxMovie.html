@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inox movies</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+<script src="/src/scripts/inox.js">
+    
+</script>
+
+</head>
+<body>
+<div>
+    <div id="get">
+    <h2>inox movies</h2>
+    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#inx">book ticket</button>
+</div>
+    <div class="modal" id="inx">
+        <div class="modal-dialog"></div>
+        <div class="modal-content modal-fullscreen">
+            <div class="modal-header">
+                <h3>please fill and book</h3>
+                <button class="btn btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <dl>
+                    
+                        
+                        <select id="selectmovie">
+                            <option>select movie</option>
+                            <option>adipurush</option>
+                            <option>kalki</option>
+                            <option>salar</option>
+                        </select>
+    
+                    
+                        
+                        <select id="selecttheatre">
+                            <option>select cinema</option>
+                            <option>rm</option>
+                            <option>padmashree</option>
+                            <option>vv mahal</option>
+                        </select>-
+    
+                    <select id="selectdate">
+                        <option>date</option>
+                        <option>today </option>
+                    </select>
+                </dl>
+                <div class="modal-footer">
+                    <button class="btn btn-success" onclick="details()">Book</button>
+                
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="MovieDetails">
+        <h3>movie Details</h3>
+        <dl class="row">
+            <dt class="col-4"> movie Name</dt>
+            <dd class="col-8" id="lblname"></dd>
+            <dt class="col-4">movie theatre</dt>
+            <dd class="col-8" id="lbltheatre"></dd>
+            <dt class="col-4">movie date</dt>
+            <dd class="col-8" id="lbldate"></dd>
+            
+        </dl>
+        
+</div>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
